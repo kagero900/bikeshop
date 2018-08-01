@@ -1,0 +1,10 @@
+.categories {
+  background: url("../img/categories_bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
