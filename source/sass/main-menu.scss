@@ -1,0 +1,37 @@
+.main-menu {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 700;
+
+
+}
+
+.main-menu__item {
+  padding: 13px 15px;
+
+  &--active {
+    border-radius: 10px;
+    background-color: $yell;
+    color: #010101;
+  }
+}
+
+.main-menu__sub-menu {
+
+  position: absolute;
+  left: 0;
+  padding: 0;
+  display:none;
+  background-color: $yell;
+  border-radius: 10px;
+}
+
+.main-menu__item:hover .main-menu__sub-menu {
+  display: block;
+}

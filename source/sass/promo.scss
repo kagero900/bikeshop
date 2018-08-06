@@ -1,0 +1,42 @@
+.promo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__title {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 32.49px;
+  letter-spacing: 0.25px;
+}
+
+.promo__slogan {
+  text-transform: none;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 32.49px;
+  color: #ffffff;
+  letter-spacing: 0.14px;
+
+  &--mark {
+    color: $yell;
+  }
+}
+
+.promo__btn {
+  margin: 0;
+  padding: 18px 27px 16px;
+  //width: 124px;
+  //height: 43px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: $yell;
+  font-size: 12px;
+  font-weight: 700;
+  //line-height: 32.49px;
+  text-align: center;
+}

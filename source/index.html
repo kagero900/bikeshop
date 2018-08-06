@@ -10,39 +10,41 @@
 	<body>
 		<div class="container">
       <header class="header">
-        <a href="#">
+        <a class="header__logo" href="#">
           <img src="img/logo.png" alt="logo">
         </a>
-        <ul class="header__nav main-menu">
-          <li class="main-menu__item ">
-            <a href=#>Bicycles</a>
-            <ul class="sub-menu">
-              <li class="sub-menu__item">
-                <a href="#">Fixed/Single Speed</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="#">City Bikes</a>
-              </li>
-              <li class="sub-menu__item">
-                <a href="#">Premium Series</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">Parts</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">Accessories</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">Extras</a>
-          </li>
-        </ul>
-        <ul class="user-nav">
-          <li class="user-nav__cart-link">
-            <a href="#"></a>
-          </li>
-        </ul>
+        <nav class="main-nav">
+          <ul class="main-nav__list main-menu">
+            <li class="main-menu__item main-menu__item--active">
+              <a href=#>Bicycles</a>
+              <ul class="main-menu__sub-menu">
+                <li class="main-menu__sub-menu-item">
+                  <a href="#">Fixed/Single Speed</a>
+                </li>
+                <li class="main-menu__sub-menu-item">
+                  <a href="#">City Bikes</a>
+                </li>
+                <li class="main-menu__sub-menu-item">
+                  <a href="#">Premium Series</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Parts</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Accessories</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Extras</a>
+            </li>
+          </ul>
+          <ul class="user-nav">
+            <li class="user-nav__cart-link">
+              <a href="#">Cart</a>
+            </li>
+          </ul>
+        </nav>
         <section class="promo">
           <h1 class="promo__title">Handmade Bicycle</h1>
           <p class="promo__slogan">You <span class="promo__slogan--mark">create</span> the <span class="promo__slogan--mark">journey,</span> we supply the <span class="promo__slogan--mark">parts</span></p>
