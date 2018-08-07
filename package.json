@@ -18,5 +18,8 @@
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "npm": "^6.2.0"
   }
 }
