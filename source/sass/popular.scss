@@ -1,5 +1,36 @@
+.popular {
+  padding: 0 24px;
+}
 .popular__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.popular__title {
+  padding: 69px 0 49px 0;
+}
+
+.popular__item {
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+}
+
+.popular__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular__item-btn {
+  display: block;
+  padding: 12px 36px 10px 34px;
+
+  //height: 43px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: $yell;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
 }

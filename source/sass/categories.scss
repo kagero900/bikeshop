@@ -1,13 +1,13 @@
 .categories {
 	padding-bottom: 170px;
   background: url("../img/categories_bg.jpg") no-repeat;
-  background-size: cover;
 }
 
 .categories__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: 16px;
 }
 
 .categories__title {
@@ -21,7 +21,7 @@
 	align-items: center;
 	width: 346px;
 	height: 288px;
-	padding-bottom: 38px;
+  margin: 0 15px;
 
 	&--single {
 		background: url('../img/single.jpg') no-repeat;
@@ -52,8 +52,8 @@
 
 .categories__item-btn {
   display: none;
-  margin: 0;  
-  padding: 17px 27px 13px;  
+  margin: 0;
+  padding: 17px 27px 13px;
   border-radius: 10px;
   background-color: transparent;
   color: #fff;
