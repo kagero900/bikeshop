@@ -17,6 +17,16 @@
   width: 490px;
 }
 
+.popular__item-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.popular__item-price {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .popular__buttons {
   display: flex;
   justify-content: space-between;
