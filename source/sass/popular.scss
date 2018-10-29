@@ -18,6 +18,7 @@
 }
 
 .popular__item-title {
+  margin: 0;
   font-size: 15px;
   font-weight: 700;
 }
@@ -27,15 +28,37 @@
   font-weight: 300;
 }
 
-.popular__buttons {
+.popular__wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.popular__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular__option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 144px;
+  height: 43px;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 1px solid #8f8f8f;
+}
+
+.popular__option-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
 }
 
 .popular__item-btn {
   display: block;
   padding: 12px 36px 10px 34px;
-
+  margin-left: 9px;
   //height: 43px;
   border-radius: 10px;
   background-color: #000000;
