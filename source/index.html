@@ -119,11 +119,14 @@
         <section class="contacts">
           <h2 class="contacts__title page-title">Contact Us</h2>
           <p class="contacts__text">Please contact us for all inquiries and purchase options.</p>
-          <form action="get">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Surname">
-            <input type="email" placeholder="user@domain.com">
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <form class="contacts__form" action="get">
+            <div class="contacts__wrapper">
+              <input class="contacts__field contacts__field--name" type="text" placeholder="Name">
+              <input class="contacts__field contacts__field--surname" type="text" placeholder="Surname">
+            </div>
+            <input class="contacts__field contacts__field--email" type="email" placeholder="user@domain.com">
+            <textarea class="contacts__field contacts__field--message" name="message" id="message" cols="30" rows="10">message</textarea>
+            <button class="contacts__btn" type="submit">Send</button>
           </form>
         </section>
       </main>
