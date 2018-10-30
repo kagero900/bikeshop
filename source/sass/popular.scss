@@ -21,6 +21,7 @@
   margin: 0;
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .popular__item-price {
@@ -30,12 +31,14 @@
 
 .popular__wrapper {
   display: flex;
-  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 33px;
 }
 
 .popular__info {
   display: flex;
   flex-direction: column;
+  margin-right: auto;
 }
 
 .popular__option {
@@ -44,7 +47,7 @@
   align-items: center;
   width: 144px;
   height: 43px;
-  padding-left: 15px;
+  padding-left: 18px;
   border-radius: 10px;
   border: 1px solid #8f8f8f;
 }
