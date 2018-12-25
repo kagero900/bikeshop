@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "test": "npm run editorconfig && npm run stylelint",
-    "start": "gulp serve",
+    "start": "npm run build && gulp serve",
     "build": "gulp build"
   },
   "author": "",
@@ -14,10 +14,16 @@
   "devDependencies": {
     "autoprefixer": "^8.6.3",
     "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "npm": "^6.4.0"
