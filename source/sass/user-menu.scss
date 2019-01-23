@@ -2,5 +2,9 @@
   width: 26px;
   height: 26px;
   cursor: pointer;
-  background: url('../img/icon-basket.png') no-repeat ;
+  background: url('../img/icon-basket.png') no-repeat;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }

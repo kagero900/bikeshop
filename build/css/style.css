@@ -406,6 +406,19 @@ ul {
   padding: 0;
   list-style: none; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 .container {
   width: 1920px;
   margin: 0 auto; }
@@ -479,6 +492,15 @@ ul {
   border-top-left-radius: 0;
   background-color: #fcff19;
   color: #010101; }
+
+.user-menu__item {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  background: url("../img/icon-basket.png") no-repeat; }
+  .user-menu__item:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .promo {
   display: flex;
@@ -746,7 +768,8 @@ ul {
   border-radius: 10px;
   background-color: #b7b7b7;
   font-size: 12px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .footer {
   background-color: #fcff19; }
