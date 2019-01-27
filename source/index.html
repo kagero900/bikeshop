@@ -4,55 +4,113 @@
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Bikeshop</title>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
 		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
       <header class="header">
-        <a class="header__logo" href="#">
-          <img src="img/logo.png" alt="logo">
-        </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list main-menu">
-            <li class="main-menu__item main-menu__item--active">
-              <a href=#>Bicycles</a>
-              <ul class="main-menu__sub-menu">
-                <li class="main-menu__sub-menu-item">
-                  <a href="#">Fixed/Single Speed</a>
-                </li>
-                <li class="main-menu__sub-menu-item">
-                  <a href="#">City Bikes</a>
-                </li>
-                <li class="main-menu__sub-menu-item">
-                  <a href="#">Premium Series</a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-menu__item">
-              <a href="#">Parts</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#">Accessories</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#">Extras</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-menu">
-            <li class="user-menu__item">
-              <a class="visually-hidden" href="#">Cart</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__top">
+          <a class="header__logo" href="#">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav__list main-menu">
+              <li class="main-menu__item main-menu__item--active">
+                <a href=#>Bicycles</a>
+                <ul class="main-menu__sub-menu">
+                  <li class="main-menu__sub-menu-item">
+                    <a href="#">Fixed / Single Speed</a>
+                  </li>
+                  <li class="main-menu__sub-menu-item">
+                    <a href="#">City Bikes</a>
+                  </li>
+                  <li class="main-menu__sub-menu-item">
+                    <a href="#">Premium Series</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item">
+                <a href="#">Parts</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#">Accessories</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#">Extras</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-menu">
+              <li class="user-menu__item">
+                <a class="visually-hidden" href="#">Cart</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <section class="promo">
           <h1 class="promo__title">Handmade Bicycle</h1>
           <p class="promo__slogan">You <span class="promo__slogan--mark">create</span> the <span class="promo__slogan--mark">journey,</span> we supply the <span class="promo__slogan--mark">parts</span></p>
           <a class="promo__btn" href="#">Shop Bikes</a>
         </section>
+        <a href="#scroll" class="header__scroll-icon">
+          <span class="visually-hidden">Листать дальше</span>
+        </a>
+        <div id="slider" class="slider">
+          <ol class="slider_indicators">
+            <li class="slider_indicator slider_indicator_active" data-slide-to="0"></li>
+            <li class="slider_indicator" data-slide-to="1"></li>
+            <li class="slider_indicator" data-slide-to="2"></li>
+            <li class="slider_indicator" data-slide-to="3"></li>
+            <li class="slider_indicator" data-slide-to="4"></li>
+          </ol>
+          <div class="slider_items">
+            <div class="slider_item slider_item_1 slider_item_active">
+              <div class="slider_text">
+
+
+              </div>
+              <img src="img/1.jpg" alt="slide1">
+            </div>
+            <div class="slider_item slider_item_2">
+              <div class="slider_text">
+
+
+              </div>
+              <img src="img/2.jpg" alt="slide2">
+            </div>
+            <div class="slider_item slider_item_3">
+              <div class="slider_text">
+
+
+              </div>
+              <img src="img/3.jpg" alt="slide3">
+            </div>
+            <div class="slider_item slider_item_4">
+              <div class="slider_text">
+
+
+              </div>
+              <img src="img/4.jpg" alt="slide4">
+            </div>
+            <div class="slider_item slider_item_5">
+              <div class="slider_text">
+
+
+              </div>
+              <img src="img/5.jpg" alt="slide5">
+            </div>
+          </div>
+          <a class="slider_control slider_control_prev" href="#" role="button"></a>
+          <a class="slider_control slider_control_next" href="#" role="button"></a>
+        </div>
       </header>
       <main>
         <section class="categories">
+          <a href="#" name="scroll" class="visually-hidden"></a>
           <h2 class="categories__title page-title">Categories</h2>
           <ul class="categories__list">
             <li class="categories__item categories__item--single">
@@ -161,5 +219,6 @@
         </ul>
       </footer>
     </div>
+    <script src="js/slider.min.js"></script>
 	</body>
 </html>
