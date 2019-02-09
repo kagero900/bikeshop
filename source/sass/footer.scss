@@ -1,4 +1,28 @@
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 17px 18% 0 18%;
   background-color: $yell;
+}
+
+.footer__logo {
+  position: relative;
+  padding: 13px 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 17px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../img/icon-bike-footer.png') no-repeat;
+  }
+}
+
+.footer__nav {
+  color: #010101;
 }
 

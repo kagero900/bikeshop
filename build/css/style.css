@@ -872,7 +872,18 @@ ul {
   height: 43px;
   padding-left: 18px;
   border-radius: 10px;
-  border: 1px solid #8f8f8f; }
+  border: 1px solid #8f8f8f;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  background-image: url("../img/arrow.svg");
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
 
 .popular__option-title {
   font-size: 12px;
@@ -881,14 +892,17 @@ ul {
 
 .popular__item-btn {
   display: block;
-  padding: 12px 36px 10px 34px;
+  padding: 16px 36px 10px 34px;
   margin-left: 9px;
   border-radius: 10px;
-  background-color: #000000;
-  color: #fcff19;
+  background-color: #b7b7b7;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 700;
   text-align: center; }
+  .popular__item-btn:hover {
+    color: #fcff19;
+    background-color: #000000; }
 
 .contacts {
   background: url("../img/contacts_bg.jpg") no-repeat;
@@ -982,4 +996,25 @@ ul {
   cursor: pointer; }
 
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 17px 18% 0 18%;
   background-color: #fcff19; }
+
+.footer__logo {
+  position: relative;
+  padding: 13px 0; }
+  .footer__logo:before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 17px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: url("../img/icon-bike-footer.png") no-repeat; }
+
+.footer__nav {
+  color: #010101; }

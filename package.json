@@ -27,6 +27,6 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "npm": "^6.4.0"
+    "npm": "^6.7.0"
   }
 }
