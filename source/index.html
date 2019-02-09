@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="Shop of handmade bicycles">
 		<title>Bikeshop</title>
-    <script
-      src="js/jquery-3.3.1.min.js"
-      ></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
 		<link href="css/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
 	<body>
 		<div class="container">
@@ -109,7 +109,7 @@
       </header>
       <main>
         <section class="categories">
-          <a href="#" name="scroll" class="visually-hidden"></a>
+          <a href="#" name="scroll" class="visually-hidden">Scroll</a>
           <h2 class="categories__title page-title">Categories</h2>
           <ul class="categories__list">
             <li class="categories__item categories__item--single">
@@ -139,7 +139,8 @@
                   <h3 class="popular__item-title">Fixed Gear</h3>
                   <span class="popular__item-price">&#36;249.00</span>
                 </div>
-                <select class="popular__option" name="" id="">
+                <label for="option1" class="visually-hidden">Option</label>
+                <select class="popular__option" id="option1" name="option">
                   <option class="popular__option-title" value="" selected disabled>Option</option>
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
@@ -155,7 +156,8 @@
                   <h3 class="popular__item-title">Big Boy Ultra</h3>
                   <span class="popular__item-price">&#36;249.00</span>
                 </div>
-                <select class="popular__option" name="" id="">
+                <label for="option2" class="visually-hidden">Option</label>
+                <select class="popular__option" id="option2" name="option">
                   <option class="popular__option-title" value="" selected disabled>Option</option>
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
@@ -171,7 +173,8 @@
                   <h3 class="popular__item-title">Sanchaez</h3>
                   <span class="popular__item-price">&#36;249.00</span>
                 </div>
-                <select class="popular__option" name="" id="">
+                <label for="option3" class="visually-hidden">Option</label>
+                <select class="popular__option" id="option3" name="option">
                   <option class="popular__option-title" value="" selected disabled>Option</option>
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
@@ -187,10 +190,14 @@
           <p class="contacts__text">Please contact us for all inquiries and purchase options.</p>
           <form class="contacts__form" action="get">
             <div class="contacts__wrapper">
-              <input class="contacts__field contacts__field--name" type="text" placeholder="Name">
-              <input class="contacts__field contacts__field--surname" type="text" placeholder="Surname">
+              <label for="name" class="visually-hidden">Name</label>
+              <input class="contacts__field contacts__field--name" id="name" type="text" placeholder="Name">
+              <label for="surname" class="visually-hidden">Surname</label>
+              <input class="contacts__field contacts__field--surname" id="surname" type="text" placeholder="Surname">
             </div>
-            <input class="contacts__field contacts__field--email" type="email" placeholder="user@domain.com">
+            <label for="email" class="visually-hidden">Email</label>
+            <input class="contacts__field contacts__field--email" id="email" type="email" placeholder="user@domain.com">
+            <label for="message" class="visually-hidden">Message</label>
             <textarea class="contacts__field contacts__field--message" name="message" id="message" cols="30" rows="10">message</textarea>
             <button class="contacts__btn" type="submit">Send</button>
           </form>

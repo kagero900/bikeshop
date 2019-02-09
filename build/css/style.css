@@ -577,6 +577,9 @@ ul {
   position: absolute;
   top: 0;
   left: 0; }
+  @media (max-width: 320px) {
+    .slider {
+      display: none; } }
 
 .slider_items {
   position: relative;
