@@ -464,10 +464,10 @@ ul {
   display: block;
   width: 66px;
   height: 77px;
-  background: url("../img/scroll_icon_link.png") no-repeat;
+  background: url("../img/icon-scroll-link.png") no-repeat;
   z-index: 20; }
   .header__scroll-icon:hover {
-    background: url("../img/scroll_icon_active.png") no-repeat, url("../img/scroll_icon_link.png") no-repeat; }
+    background: url("../img/icon-scroll-active.png") no-repeat, url("../img/icon-scroll-link.png") no-repeat; }
 
 .main-nav {
   display: flex; }

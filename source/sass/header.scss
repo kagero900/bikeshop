@@ -34,7 +34,7 @@
   display: block;
   margin-top: 8px;
   margin-left: 4px;
-  height: 32px; 
+  height: 32px;
 
   img {
     display: block;
@@ -60,12 +60,12 @@
   display: block;
   width: 66px;
   height: 77px;
-  background: url("../img/scroll_icon_link.png") no-repeat;
+  background: url("../img/icon-scroll-link.png") no-repeat;
   z-index: 20;
 
   &:hover {
     //bottom: 44px;
-    background: url("../img/scroll_icon_active.png") no-repeat,
-      url("../img/scroll_icon_link.png") no-repeat;;
+    background: url("../img/icon-scroll-active.png") no-repeat,
+      url("../img/icon-scroll-link.png") no-repeat;;
   }
 }
